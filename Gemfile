@@ -96,4 +96,5 @@ group :test do
   gem 'database_cleaner'
 end
 
+gem 'zmey_metal_store', path: '~/repos/zmey_metal_store'
 gem 'zmey_pipe_boxings', path: '~/repos/zmey_pipe_boxings'

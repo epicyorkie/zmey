@@ -1,4 +1,10 @@
 PATH
+  remote: ~/repos/zmey_metal_store
+  specs:
+    zmey_metal_store (0.0.1)
+      rails (~> 4.2.0.beta1)
+
+PATH
   remote: ~/repos/zmey_pipe_boxings
   specs:
     zmey_pipe_boxings (0.0.1)
@@ -347,4 +353,5 @@ DEPENDENCIES
   web-console (~> 2.0.0.beta2)
   whenever
   will_paginate
+  zmey_metal_store!
   zmey_pipe_boxings!
