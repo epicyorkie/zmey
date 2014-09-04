@@ -95,3 +95,5 @@ group :test do
   gem 'simplecov', require: false
   gem 'database_cleaner'
 end
+
+gem 'zmey_pipe_boxings', path: '~/repos/zmey_pipe_boxings'

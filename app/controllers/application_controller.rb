@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
+  helper ZmeyPipeBoxings::ApplicationHelper
 
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.

@@ -192,5 +192,7 @@ Rails.application.routes.draw do
 
   get ':slug' => 'pages#show', as: :slug, constraints: { slug: /[-a-z0-9_\/\.]*/ }
 
+  mount ZmeyPipeBoxings::Engine, at: '/'
+
   root controller: 'pages', action: 'show', slug: ''
 end
