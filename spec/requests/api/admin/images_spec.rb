@@ -19,6 +19,7 @@ describe 'Admin images API' do
 
         expect(images['images'].length).to eq 1
         expect(images['images'][0]['id']).to eq @image1.id
+        expect(images['images'][0]['href']).to eq api_admin_image_url(@image1)
         expect(images['images'][0]['filename']).to eq @image1.filename
         expect(images['images'][0]['name']).to eq @image1.name
       end
@@ -39,6 +40,26 @@ describe 'Admin images API' do
         get '/api/admin/images'
         images = JSON.parse(response.body)
         expect(images['images'].length).to eq 0
+      end
+    end
+  end
+
+  describe 'GET show' do
+    context 'when image found' do
+      before do
+        @image = FactoryGirl.create(:image, website_id: @website.id)
+      end
+
+      it 'returns 200 OK' do
+        get api_admin_image_path(@image)
+        expect(response.status).to eq 200
+      end
+    end
+
+    context 'when no image' do
+      it 'returns 404 Not Found' do
+        get '/api/admin/images/0'
+        expect(response.status).to eq 404
       end
     end
   end
