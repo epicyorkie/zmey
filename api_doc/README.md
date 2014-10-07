@@ -60,6 +60,11 @@ A successful retrieval will return JSON similar to the example:
 * [`POST` api/admin/images](endpoints/admin/images/POST_create.md)
 * [`DELETE` api/admin/images](endpoints/admin/images/DELETE_delete_all.md)
 
+### Liquid Templates
+
+* [`POST` api/admin/liquid_templates](endpoints/admin/liquid_templates/POST_create.md)
+* [`DELETE` api/admin/liquid_templates](endpoints/admin/liquid_templates/DELETE_delete_all.md)
+
 ### Orders
 
 * [`GET` api/admin/orders](endpoints/admin/orders/GET_index.md)
